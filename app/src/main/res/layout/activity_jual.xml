@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.JualActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/toolbar_back"/>
+
+                <ImageView
+                    android:id="@+id/imageupload"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:src="@drawable/ic_image"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/update"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_camera"
+                    app:civ_border_color="@color/secondaryDarkColor"
+                    app:civ_border_width="15dp"
+                    android:layout_gravity="center_horizontal"
+                    app:civ_circle_background_color="@color/secondaryDarkColor"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:hint="Nama Barang"
+                    android:layout_gravity="center_horizontal">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:id="@+id/nama_barang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Bahan"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <Spinner
+                        android:id="@+id/spinner_bahan"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"/>
+
+
+<!--                <RadioGroup-->
+<!--                    android:id="@+id/radioGroupNb"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                        <RadioButton-->
+<!--                            android:id="@+id/radioAcer"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:checked="true"-->
+<!--                            android:text="Kardus"-->
+<!--                            android:layout_marginRight="10dp"-->
+<!--                            android:layout_marginLeft="10dp"/>-->
+
+<!--                        <RadioButton-->
+<!--                            android:id="@+id/radioAsus"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Plastik"-->
+<!--                            android:layout_marginRight="10dp"-->
+<!--                            android:layout_marginLeft="10dp"/>-->
+
+<!--                        <RadioButton-->
+<!--                            android:id="@+id/kain"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:checked="false"-->
+<!--                            android:text="Kain"-->
+<!--                            android:layout_marginRight="10dp"-->
+<!--                            android:layout_marginLeft="10dp"-->
+<!--                            />-->
+
+<!--                        <RadioButton-->
+<!--                            android:id="@+id/kertas"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Kertas"-->
+<!--                            android:layout_marginRight="10dp"-->
+<!--                            android:layout_marginLeft="10dp"-->
+<!--                            />-->
+
+<!--                        <RadioButton-->
+<!--                            android:id="@+id/stik"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:checked="false"-->
+<!--                            android:text="Stik"-->
+<!--                            android:layout_marginRight="10dp"-->
+<!--                            android:layout_marginLeft="10dp"/>-->
+
+<!--                        <RadioButton-->
+<!--                            android:id="@+id/kayu"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:text="Kayu"-->
+<!--                            android:layout_marginRight="10dp"-->
+<!--                            android:layout_marginLeft="10dp"/>-->
+
+<!--                        <RadioButton-->
+<!--                            android:id="@+id/botol"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:checked="false"-->
+<!--                            android:text="Botol"-->
+<!--                            android:layout_marginRight="10dp"-->
+<!--                            android:layout_marginLeft="10dp"-->
+<!--                            />-->
+
+<!--                     </RadioGroup>-->
+
+                </LinearLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:hint="Harga Barang"
+                    android:layout_gravity="center_horizontal">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:id="@+id/harga_barang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:hint="Nomor Telpon"
+                    android:layout_gravity="center_horizontal">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:id="@+id/nomor_telpon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/kirim_jual_btn"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kirim"
+                    android:background="@color/secondaryDarkColor"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

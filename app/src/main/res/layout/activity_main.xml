@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="231dp"
+                android:layout_height="224dp"
+                android:src="@mipmap/prozy"/>
+
+            <TextView
+                android:textColor="@color/secondaryColor"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32sp"
+                android:text="Recycle Trash"/>
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/daftar"
+                android:textColor="@color/primaryLightColor"
+                android:background="@drawable/btn_rounded_fill"
+               android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:text="Daftar"/>
+
+            <Button
+                android:id="@+id/masuk"
+                android:textColor="@color/primaryLightColor"
+                android:background="@drawable/btn_rounded_fill"
+               android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="Masuk"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/fb_btn"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:src="@mipmap/facebook"/>
+
+<!--                <com.facebook.login.widget.LoginButton-->
+<!--                    android:id="@+id/login_button"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    android:layout_marginBottom="30dp" />-->
+                <ImageView
+                    android:id="@+id/google_btn"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:src="@mipmap/google_sign"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

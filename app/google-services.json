@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "933896541506",
+    "firebase_url": "https://recycle-trash.firebaseio.com",
+    "project_id": "recycle-trash",
+    "storage_bucket": "recycle-trash.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933896541506:android:5320f4b56cffad54e864db",
+        "android_client_info": {
+          "package_name": "com.prozy.recycletrash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "933896541506-ae21j4sh0hbcfeel809a5m1lbnkfeiqc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prozy.recycletrash",
+            "certificate_hash": "86f7f26064fdd3fa34a55e16ec8a3a74f45e65f2"
+          }
+        },
+        {
+          "client_id": "933896541506-to6kgl45gqt4psp3f4hecb6arq8a60qi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prozy.recycletrash",
+            "certificate_hash": "d629627f13c2fa53c2a8cc21a2fe95e9b6670fa9"
+          }
+        },
+        {
+          "client_id": "933896541506-mtkffuch31ojadqhfv1qjukgacu8n4rd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzji4Nlm1MdmVQLAUed8vq0tj3oimFc6s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "933896541506-as4k00ghtc8nauvkh6flfgte5b1qgagh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
